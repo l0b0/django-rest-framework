@@ -107,13 +107,13 @@ class BasePermission(metaclass=BasePermissionMetaclass):
         """
         Return `True` if permission is granted, `False` otherwise.
         """
-        return True
+        return False
 
     def has_object_permission(self, request, view, obj):
         """
         Return `True` if permission is granted, `False` otherwise.
         """
-        return True
+        return False
 
 
 class AllowAny(BasePermission):
